@@ -1,0 +1,23 @@
+Quando dizemos que uma classe em um sistema deve ter
+uma única responsabilidade, o que estamos buscando principalmente?
+a) Reduzir a quantidade de métodos na classe.
+b) Aumentar o acoplamento entre as classes.
+c) Permitir que a classe tenha várias funcionalidades diferentes.
+d) Melhorar a coesão e facilitar a manutenção.
+
+
+Quando dizemos que uma classe em um sistema deve ter uma única responsabilidade, estamos nos referindo ao Princípio da Responsabilidade Única (Single Responsibility Principle - SRP), um dos princípios do SOLID em design de software. Esse princípio sugere que uma classe deve ter apenas um motivo para mudar, ou seja, ela deve ter uma única responsabilidade ou finalidade.
+
+Vamos analisar as opções:
+
+a) Reduzir a quantidade de métodos na classe: Embora a aplicação do SRP possa resultar em menos métodos em uma classe, o objetivo principal não é simplesmente reduzir a quantidade de métodos, mas sim garantir que todos os métodos da classe estejam relacionados a uma única responsabilidade.
+
+b) Aumentar o acoplamento entre as classes: Isso é uma consequência negativa. O SRP visa reduzir o acoplamento entre classes, promovendo a independência e a modularidade.
+
+c) Permitir que a classe tenha várias funcionalidades diferentes: Isso é o oposto do que o SRP promove. O SRP visa garantir que uma classe tenha uma única responsabilidade, não várias.
+
+d) Melhorar a coesão e facilitar a manutenção: Isso é a principal consequência positiva do SRP. Quando uma classe tem uma única responsabilidade, ela tende a ser mais coesa, o que facilita a compreensão, a manutenção e a evolução do código.
+
+Portanto, a opção correta é:
+
+d) Melhorar a coesão e facilitar a manutenção.
