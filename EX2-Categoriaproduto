@@ -1,0 +1,44 @@
+Crie um enum chamado CategoriaProduto representando
+categorias de produtos (ELETRONICO, VESTUARIO, ALIMENTO).
+Utilize um Scanner para obter a categoria do usuário e
+imprima uma mensagem correspondente.
+
+import java.util.Scanner;
+
+public class CategoriaProdutoApp {
+
+    // Definindo o enum CategoriaProduto
+    public enum CategoriaProduto {
+        ELETRONICO, VESTUARIO, ALIMENTO
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitando ao usuário para escolher uma categoria de produto
+        System.out.println("Escolha uma categoria de produto (ELETRONICO, VESTUARIO, ALIMENTO):");
+        String categoriaEscolhida = scanner.next().toUpperCase();
+
+        // Convertendo a entrada do usuário para um valor do enum
+        CategoriaProduto categoria = CategoriaProduto.valueOf(categoriaEscolhida);
+
+        // Usando switch-case para imprimir a mensagem correspondente
+        switch (categoria) {
+            case ELETRONICO:
+                System.out.println("Você escolheu a categoria: Eletrônico.");
+                break;
+            case VESTUARIO:
+                System.out.println("Você escolheu a categoria: Vestuário.");
+                break;
+            case ALIMENTO:
+                System.out.println("Você escolheu a categoria: Alimento.");
+                break;
+            default:
+                System.out.println("Categoria inválida.");
+                break;
+        }
+
+        // Fechando o scanner
+        scanner.close();
+    }
+}
