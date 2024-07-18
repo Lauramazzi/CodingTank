@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class Calculadora {
+
+    // Definindo o enum OperacaoMatematica
+    public enum OperacaoMatematica {
+        SOMA, SUBTRACAO, MULTIPLICACAO, DIVISAO
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitando ao usuário para digitar dois números
+        System.out.println("Digite o primeiro número:");
+        double numero1 = scanner.nextDouble();
+
+        System.out.println("Digite o segundo número:");
+        double numero2 = scanner.nextDouble();
+
+        // Solicitando ao usuário para escolher uma operação
+        System.out.println("Escolha uma operação (SOMA, SUBTRACAO, MULTIPLICACAO, DIVISAO):");
+        String operacaoEscolhida = scanner.next().toUpperCase();
+
+        // Convertendo a entrada do usuário para um valor do enum
+        OperacaoMatematica operacao = OperacaoMatematica.valueOf(operacaoEscolhida);
+
+        // Variável para armazenar o resultado
+        double resultado = 0;
+
+        // Usando switch-case para realizar a operação escolhida
+        switch (operacao) {
+            case SOMA:
+                resultado = numero1 + numero2;
+                break;
+            case SUBTRACAO:
+                resultado = numero1 - numero2;
+                break;
+            case MULTIPLICACAO:
+                resultado = numero1 * numero2;
+                break;
+            case DIVISAO:
+                // Verificando se o segundo número não é zero
+                if (numero2 != 0) {
+                    resultado = numero1 / numero2;
+                } else {
+                    System.out.println("Erro: Divisão por zero não é permitida.");
+                    scanner.close();
+                    return;
+                }
+                break;
+        }
+
+        // Exibindo o resultado
+        System.out.println("O resultado da operação " + operacao + " é: " + resultado);
+
+        // Fechando o scanner
+        scanner.close();
+    }
+}
