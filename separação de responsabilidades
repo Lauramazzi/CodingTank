@@ -1,1 +1,21 @@
+Qual das seguintes opções é uma consequência positiva
+da separação de responsabilidades em um projeto de software?
+a) Aumento da complexidade do código.
+b) Dificuldade na identificação de bugs.
+c) Facilitação da colaboração entre desenvolvedores.
+d) Redução da necessidade de documentação.
 
+
+A separação de responsabilidades em um projeto de software, também conhecida como separação de preocupações (Separation of Concerns - SoC), é uma prática de design que melhora a organização e a manutenção do código. Vamos analisar as opções:
+
+a) Aumento da complexidade do código: Isso é uma consequência negativa, pois a separação de responsabilidades tende a reduzir a complexidade ao dividir o sistema em componentes menores e mais gerenciáveis.
+
+b) Dificuldade na identificação de bugs: Isso também é uma consequência negativa. A separação de responsabilidades geralmente facilita a identificação de bugs, pois os problemas podem ser isolados em partes específicas do sistema.
+
+c) Facilitação da colaboração entre desenvolvedores: Isso é uma consequência positiva. Com responsabilidades bem definidas, os desenvolvedores podem trabalhar em diferentes partes do projeto de forma independente, reduzindo conflitos e facilitando a colaboração.
+
+d) Redução da necessidade de documentação: Embora a separação de responsabilidades possa melhorar a clareza do código, ela não elimina a necessidade de documentação. Documentação ainda é importante para garantir que todos entendam o design e a funcionalidade do sistema.
+
+Portanto, a opção correta é:
+
+c) Facilitação da colaboração entre desenvolvedores.
