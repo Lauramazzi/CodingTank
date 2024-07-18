@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class ConversorMoedaSimples {
+
+    public static void main(String[] args) {
+        // Cria um objeto Scanner para obter a entrada do usuário
+        Scanner scanner = new Scanner(System.in);
+        
+        // Pede ao usuário para digitar o valor em dólares
+        System.out.println("Digite o valor em dólares:");
+        double valorEmDolar = scanner.nextDouble();
+        
+        // Define a taxa de câmbio fixa
+        double taxaDeCambio = 4.86;
+        
+        // Calcula o valor em reais
+        double valorEmReal = valorEmDolar * taxaDeCambio;
+        
+        // Exibe o resultado
+        System.out.println("Valor em Real: " + valorEmReal);
+        
+        // Fecha o scanner
+        scanner.close();
+    }
+}
