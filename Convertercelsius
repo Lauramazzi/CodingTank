@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class ConversorTemperatura {
+
+    // Método para converter Celsius para Fahrenheit
+    public static double converterCelsiusParaFahrenheit(double temperaturaCelsius) {
+        return (temperaturaCelsius * 9 / 5) + 32;
+    }
+
+    public static void main(String[] args) {
+        // Cria um objeto Scanner para obter a entrada do usuário
+        Scanner scanner = new Scanner(System.in);
+        
+        // Pede ao usuário para digitar a temperatura em Celsius
+        System.out.println("Digite a temperatura em graus Celsius:");
+        double temperaturaCelsius = scanner.nextDouble();
+        
+        // Chama o método para converter Celsius para Fahrenheit
+        double temperaturaFahrenheit = converterCelsiusParaFahrenheit(temperaturaCelsius);
+        
+        // Exibe o resultado
+        System.out.println("Temperatura em Fahrenheit: " + temperaturaFahrenheit);
+        
+        // Fecha o scanner
+        scanner.close();
+    }
+}
